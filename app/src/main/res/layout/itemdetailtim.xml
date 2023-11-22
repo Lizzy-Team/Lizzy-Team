@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="16dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="167dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="12dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/fotodetailkolaborasi"
+                android:layout_width="match_parent"
+                android:layout_height="97.12dp"
+                android:src="@drawable/kolaborasidefault"
+                android:scaleType="centerCrop"
+                />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18.9dp"
+            android:layout_marginTop="21.32dp"
+            >
+
+
+
+
+        <TextView
+            android:id="@+id/namateam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Create Mobile App"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/iconcal"
+            android:layout_width="18dp"
+            android:layout_height="21dp"
+            android:src="@drawable/baseline_calendar_today_24"
+            android:layout_below="@id/namateam"
+            android:layout_marginTop="27dp"
+            />
+
+            <TextView
+                android:id="@+id/ttg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="November 17,2023 10:45 PM"
+                android:layout_toRightOf="@+id/iconcal"
+                android:layout_below="@id/namateam"
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="10dp"
+                />
+
+</RelativeLayout>
+
+
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fotodetailteam"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="18.9dp"
+                android:layout_marginTop="20dp"
+                tools:src="@drawable/kolaborasidefault"
+                android:layout_below="@id/fotodetailkolaborasi"
+                android:scaleType="centerCrop"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+                />
+
+            <TextView
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Progress Task"
+                android:textStyle="bold"
+                android:textColor="#808080"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="100dp"
+                android:layout_toRightOf="@+id/fotodetailteam"
+                android:layout_below="@id/fotodetailkolaborasi"
+
+                />
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/ProgressBarPrimary"
+                android:layout_width="100dp"
+                android:layout_height="10dp"
+                android:layout_below="@+id/progress"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="10dp"
+                android:indeterminate="false"
+                tools:max="100"
+                tools:progress="50"
+                 />
+
+            <TextView
+                android:id="@+id/taskper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="50%"
+                android:textStyle="bold"
+                android:textColor="@color/greyscale100"
+                android:layout_toRightOf="@+id/progressBar"
+                android:layout_below="@+id/progress"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="4sp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
