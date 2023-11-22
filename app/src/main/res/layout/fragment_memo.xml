@@ -1,14 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MemoFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:id="@+id/memo_baru"
+    tools:context=".MemoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/closeButton"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2.2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="0dp"
+        android:text="X"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/titlememo"
+        android:layout_width="234dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="73dp"
+        android:gravity="center"
+        android:text="@string/memo_baru"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+
+
+    <TextView
+        android:id="@+id/jdwl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlememo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/jadwal"
+        android:textColor="@color/greyscale70"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlememo" />
+
+    <EditText
+        android:id="@+id/shortFormEditText"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/jdwl"
+        android:layout_marginTop="20dp"
+        android:hint="Judul" />
+    <EditText
+        android:id="@+id/paragraphFormEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/shortFormEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Deskripsi" />
+
+    <TextView
+        android:id="@+id/ket_prior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paragraphFormEditText"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/prior"
+        android:textColor="@color/greyscale70"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paragraphFormEditText" />
+
+    <LinearLayout
+        android:id="@+id/tiga_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ket_prior"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <!--android:backgroundTint=""-->
+        <Button
+            android:id="@+id/btn_low"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/low"
+            android:textSize="12sp"
+            android:textColor="@color/primary500"
+            app:strokeColor="@color/primary500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_med"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/medium"
+            android:textSize="12sp"
+            android:textColor="@color/primary500"
+            app:strokeColor="@color/primary500"/>
+
+        <Button
+            android:id="@+id/btn_hi"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/high"
+            android:textSize="12sp"
+            android:textColor="@color/primary500"
+            app:strokeColor="@color/primary500" />
+    </LinearLayout>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/reminderSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tiga_button"
+        android:layout_marginTop="16dp"
+        android:text="@string/pengingat" />
+
+    <Button
+        android:id="@+id/btn_buat"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="47dp"
+        android:text="@string/buat_memo"
+        android:textColor="@color/primary500"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/primary500" />
+
+
+</RelativeLayout>

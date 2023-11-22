@@ -4,4 +4,15 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="memo_baru">Buat Memo Baru</string>
+    <string name="judul">Judul</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="prior">Prioritas</string>
+    <string name="low">Rendah</string>
+    <string name="medium">Menengah</string>
+    <string name="high">Tinggi</string>
+    <string name="pengingat">Pengingat</string>
+    <string name="buat_memo">Buat Memo</string>
+    <string name="jadwal">Jadwal</string>
+    <string name="img_desc">img_desc</string>
 </resources>

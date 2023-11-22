@@ -1,6 +1,7 @@
 package com.example.remember_lizzy
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.remember_lizzy.databinding.ActivityMainBinding
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class MainActivity : AppCompatActivity() {
@@ -30,11 +32,20 @@ class MainActivity : AppCompatActivity() {
                         binding.bottomNavMain.visibility = View.VISIBLE
                     }
                     else -> {
-                        binding.bottomNavMain.visibility = View.GONE
+                        binding.bottomNavMain.visibility = View.VISIBLE
                     }
                 }
             }
         }
+
+        val btnScan: FloatingActionButton = findViewById(R.id.btn_scan)
+        btnScan.setOnClickListener {
+            // Ketika FloatingActionButton diklik, buka MemoActivity
+            val intent = Intent(this, MemoActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
         binding.bottomNavMain.setupWithNavController(navController)
     }
