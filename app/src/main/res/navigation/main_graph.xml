@@ -25,4 +25,9 @@
         android:name="com.example.remember_lizzy.ui.task.TaskFragment"
         android:label="fragment_task"
         tools:layout="@layout/fragment_task" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.remember_lizzy.ui.detailteam.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
 </navigation>
