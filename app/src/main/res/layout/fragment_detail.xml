@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.detailteam.detail.DetailFragment"
+    android:layout_marginTop="16dp"
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/gambar"
+        android:layout_width="320dp"
+        android:layout_height="134dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/kolaborasidefault"
+        android:scaleType="centerCrop"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large"
+        />
+
+    <TextView
+        android:id="@+id/deskteam"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:text="Networking tidak sama dengan Nepotisme Dengan bangun LinkedIn, HR bisa hire kita tanpa harus melamar terlebih dahulu."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/greyscale100"
+        app:layout_constraintTop_toBottomOf="@id/gambar"
+        android:textAlignment="inherit"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deskteam"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/gprofile"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/vector"/>
+
+        <TextView
+            android:id="@+id/tprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/gprofile"
+            android:text="Tim"
+            android:textColor="@color/greyscale70"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/fototeam"
+                android:layout_toEndOf="@id/tprofile"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="8dp"
+                tools:src="@drawable/kolaborasidefault"
+                android:scaleType="centerCrop"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ketua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/team"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/gketua"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/profile"/>
+        <TextView
+            android:id="@+id/tketua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ketua"
+            android:textColor="@color/greyscale70"
+            android:layout_toEndOf="@id/gketua"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/fotoketua"
+            android:layout_toEndOf="@id/tketua"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="8dp"
+            tools:src="@drawable/kolaborasidefault"
+            android:scaleType="centerCrop"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ketua"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/gtanggal"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/calendar"/>
+        <TextView
+            android:id="@+id/ttanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:textColor="@color/greyscale70"
+            android:layout_toEndOf="@id/gtanggal"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tanggal"
+            android:layout_toEndOf="@id/ttanggal"
+            android:layout_marginStart="50dp"
+            android:text="22 November 2023"
+            android:layout_marginTop="8dp"
+            tools:src="@drawable/kolaborasidefault"
+            android:scaleType="centerCrop"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tanggal"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/gprogress"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/progress"/>
+
+        <TextView
+            android:id="@+id/tprogress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/gprogress"
+            android:text="Progrees"
+            android:textColor="@color/greyscale70"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/fotoprogress"
+            android:layout_toEndOf="@id/tprogress"
+            android:layout_marginStart="40dp"
+            tools:src="@drawable/kolaborasidefault"
+            style="@style/ProgressBarPrimary"
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:indeterminate="false"
+            tools:max="100"
+            tools:progress="50"/>
+        <TextView
+            android:id="@+id/taskper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="50%"
+            android:textStyle="bold"
+            android:textColor="@color/greyscale100"
+            android:layout_toRightOf="@+id/fotoprogress"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="4sp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="276dp"
+        android:layout_height="43dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress"
+        android:layout_marginTop="10dp"
+        app:tabMode="fixed"
+        android:background="@color/primary300"
+        app:tabIndicatorGravity="stretch"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabTextColor="@color/primary100"
+        app:tabSelectedTextColor="@color/primary100"
+        app:tabIndicator="@color/primary500"
+        app:tabIndicatorColor="@color/primary500"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/viewPager2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
