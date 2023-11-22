@@ -88,48 +88,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ket_prior"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="1dp"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
         <!--android:backgroundTint=""-->
         <Button
             android:id="@+id/btn_low"
             style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="105dp"
-            android:layout_height="48dp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="0dp"
             android:layout_marginTop="10dp"
             android:text="@string/low"
+            android:textSize="12sp"
             android:textColor="@color/primary500"
-            android:textSize="11sp"
+            app:strokeColor="@color/primary500"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:strokeColor="@color/primary500" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/btn_med"
             style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="105dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="6dp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:text="@string/medium"
+            android:textSize="12sp"
             android:textColor="@color/primary500"
-            android:textSize="11sp"
-            app:strokeColor="@color/primary500" />
+            app:strokeColor="@color/primary500"/>
 
         <Button
             android:id="@+id/btn_hi"
             style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="105dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="6dp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:text="@string/high"
+            android:textSize="12sp"
             android:textColor="@color/primary500"
-            android:textSize="11sp"
             app:strokeColor="@color/primary500" />
     </LinearLayout>
 
@@ -151,7 +148,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="87dp"
+        android:layout_marginBottom="47dp"
         android:text="@string/buat_memo"
         android:textColor="@color/primary500"
         android:textSize="16sp"

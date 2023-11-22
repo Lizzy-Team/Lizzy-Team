@@ -20,6 +20,9 @@
         <activity
             android:name=".component.TabDetailActivity"
             android:exported="false" />
+      <activity
+            android:name=".MemoActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
