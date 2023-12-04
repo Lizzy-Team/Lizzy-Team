@@ -29,13 +29,19 @@
         android:name="com.example.remember_lizzy.ui.task.TaskFragment"
         android:label="fragment_task"
         tools:layout="@layout/fragment_task" />
+
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.example.remember_lizzy.ui.detailteam.detail.DetailFragment"
         android:label="fragment_detail"
+<<<<<<< HEAD
         tools:layout="@layout/fragment_detail" >
         <argument
             android:name="detailtim"
             app:argType="com.example.remember_lizzy.model.DetailTim" />
     </fragment>
+=======
+        tools:layout="@layout/fragment_detail" />
+
+>>>>>>> 1b2879c18d1dfd3648e9539f947f6679b2b28b16
 </navigation>
