@@ -9,7 +9,11 @@
         android:id="@+id/detailtimFragment"
         android:name="com.example.remember_lizzy.ui.detailteam.detailtimFragment"
         android:label="fragment_detailtim"
-        tools:layout="@layout/fragment_detailtim" />
+        tools:layout="@layout/fragment_detailtim" >
+        <action
+            android:id="@+id/action_detailtimFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.remember_lizzy.ui.home.HomeFragment"
@@ -29,5 +33,9 @@
         android:id="@+id/detailFragment"
         android:name="com.example.remember_lizzy.ui.detailteam.detail.DetailFragment"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="detailtim"
+            app:argType="com.example.remember_lizzy.model.DetailTim" />
+    </fragment>
 </navigation>

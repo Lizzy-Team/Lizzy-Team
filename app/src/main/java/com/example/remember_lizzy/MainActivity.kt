@@ -6,9 +6,11 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.remember_lizzy.databinding.ActivityMainBinding
+import com.example.remember_lizzy.ui.detailteam.adapter.popFragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +24,9 @@ class MainActivity : AppCompatActivity() {
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_main) as NavHostFragment
         val navController = navHostFragment.navController
+
+        binding.btnScan.setOnClickListener{replace(popFragment())}
+
 
         navController.addOnDestinationChangedListener { _, navDestination, _ ->
             Handler(Looper.getMainLooper()).post {
@@ -37,10 +42,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.bottomNavMain.setupWithNavController(navController)
+
     }
 
 
-
+    private fun replace(fragment: Fragment){
+        val fragmentManager = supportFragmentManager
+        val  fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.popup, fragment)
+        fragmentTransaction.commit()
+    }
 
 
 

@@ -41,6 +41,16 @@
             app:menu="@menu/bottom_main_menu"/>
     </com.google.android.material.bottomappbar.BottomAppBar>
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/btn_scan"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="80dp"
+        />
+
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_scan"
         android:layout_width="wrap_content"
@@ -53,7 +63,8 @@
         app:maxImageSize="32dp"
         app:srcCompat="@drawable/baseline_add_24"
         app:layout_anchor="@id/bottom_app_bar"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
