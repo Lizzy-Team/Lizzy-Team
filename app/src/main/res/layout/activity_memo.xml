@@ -15,13 +15,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="2.2dp"
+        android:layout_marginTop="3dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="0dp"
-        android:text="X"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"/>
+        android:drawableRight="@drawable/silang"
+        android:contentDescription="silang"/>
 
     <TextView
         android:id="@+id/titlememo"
@@ -34,6 +32,7 @@
         android:gravity="center"
         android:text="@string/memo_baru"
         android:textColor="@color/black"
+        android:textStyle="bold"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,6 +53,20 @@
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titlememo" />
+
+    <ImageView
+        android:id="@+id/kaleder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlememo"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@+id/jdwl"
+        android:background="@drawable/rectangle_background"
+        android:src="@drawable/baseline_calendar_month_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="108dp" />
 
     <EditText
         android:id="@+id/shortFormEditText"
@@ -88,45 +101,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ket_prior"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
         <!--android:backgroundTint=""-->
         <Button
             android:id="@+id/btn_low"
             style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
+            android:layout_width="105dp"
+            android:layout_height="48dp"
             android:layout_marginLeft="0dp"
             android:layout_marginTop="10dp"
             android:text="@string/low"
-            android:textSize="12sp"
             android:textColor="@color/primary500"
-            app:strokeColor="@color/primary500"
+            android:textSize="11sp"
+            android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/primary500" />
 
         <Button
             android:id="@+id/btn_med"
             style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
+            android:layout_width="105dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="6dp"
             android:layout_marginTop="10dp"
             android:text="@string/medium"
-            android:textSize="12sp"
+            android:textAllCaps="false"
             android:textColor="@color/primary500"
-            app:strokeColor="@color/primary500"/>
+            android:textSize="11sp"
+            app:strokeColor="@color/primary500" />
 
         <Button
             android:id="@+id/btn_hi"
             style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
+            android:layout_width="105dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="6dp"
             android:layout_marginTop="10dp"
             android:text="@string/high"
-            android:textSize="12sp"
+            android:textAllCaps="false"
             android:textColor="@color/primary500"
+            android:textSize="11sp"
             app:strokeColor="@color/primary500" />
     </LinearLayout>
 
@@ -151,7 +170,8 @@
         android:layout_marginBottom="47dp"
         android:text="@string/buat_memo"
         android:textColor="@color/primary500"
-        android:textSize="16sp"
+        android:textSize="1sp"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.463"
