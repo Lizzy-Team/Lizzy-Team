@@ -170,7 +170,7 @@
         android:layout_marginBottom="47dp"
         android:text="@string/buat_memo"
         android:textColor="@color/primary500"
-        android:textSize="16sp"
+        android:textSize="1sp"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

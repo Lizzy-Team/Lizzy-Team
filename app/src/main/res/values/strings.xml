@@ -20,4 +20,8 @@
     <string name="jadwal">Jadwal</string>
     <string name="img_desc">img_desc</string>
     <string name='lgn'>Login</string>
+    <string name="ket_ver">Masukan kode verifikasi yang sudah dikirim ke user \n lidyadhanira@gmail.com </string>
+    <string name="onboard1">Kelola tugas Anda dengan lebih \n efisien dan produktif.</string>
+    <string name="onboard2">Tambahkan deadline dan prioritas \n untuk mengelola tugas dengan lebih efektif.</string>
+    <string name="onboard3">Atur, bagikan, dan selesaikan tugas \n bersama tim secara kolaboratif.</string>
 </resources>
