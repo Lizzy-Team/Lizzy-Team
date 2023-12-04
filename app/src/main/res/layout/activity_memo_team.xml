@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MemoTeamActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_back"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
+            android:drawableLeft="@drawable/silang"
+            android:contentDescription="silang"/>
+
+
+        <TextView
+            android:id="@+id/titletask"
+            android:layout_width="234dp"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="73dp"
+            android:gravity="center"
+            android:text="GRUP"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <!-- Icon Join Voice -->
+
+        <TextView
+            android:id="@+id/textPersonalBranding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:text="Personal Branding"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iconJoinVoice"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/headphone"
+            android:layout_gravity="left"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"/>
+
+        <!-- Icon Profile -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gabung" />
+
+        <ImageView
+            android:id="@+id/iconProfile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/vektor" />
+
+    </LinearLayout>
+
+
+    <!-- Cari Data -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:hint="Cari"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Online -->
+    <TextView
+        android:id="@+id/textOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Online"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#006400"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Nama User Online -->
+    <TextView
+        android:id="@+id/user1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Riodiana"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/user2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dika Ganteng"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/user3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ariana Grande"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Offline -->
+    <TextView
+        android:id="@+id/textOffline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Offline"
+        android:textSize="18sp"
+        android:layout_gravity="left"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Nama User Offline -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lizzania"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maila"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ryanti"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Husen"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rizzky"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/textPersonalBranding"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="Undang Partner"
+            android:paddingRight="8dp"/>
+
+        <!-- Icon Plus -->
+        <ImageView
+            android:id="@+id/iconPlus"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/plus_kotak" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

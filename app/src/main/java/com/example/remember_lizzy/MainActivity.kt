@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
@@ -37,23 +38,15 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+        binding.bottomNavMain.setupWithNavController(navController)
 
         val btnScan: FloatingActionButton = findViewById(R.id.btn_scan)
         btnScan.setOnClickListener {
             // Ketika FloatingActionButton diklik, buka MemoActivity
             val intent = Intent(this, MemoActivity::class.java)
             startActivity(intent)
+            Log.d("MainActivity", "Button clicked!") // atau gunakan Toast untuk pesan popup sederhana
         }
 
-
-
-        binding.bottomNavMain.setupWithNavController(navController)
     }
-
-
-
-
-
-
-
 }

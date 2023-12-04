@@ -15,12 +15,24 @@
         android:theme="@style/Theme.RememberLizzy"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CatatanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".utils.CatatanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MemoTeamActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.detailteam.detail.DetailTabActivity"
             android:exported="false" />
         <activity
             android:name=".component.TabDetailActivity"
             android:exported="false" />
-      <activity
+        <activity
             android:name=".MemoActivity"
             android:exported="false" />
         <activity
