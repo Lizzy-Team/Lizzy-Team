@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.remember_lizzy.data.DataDetailTim
 import com.example.remember_lizzy.databinding.FragmentDetailtimBinding
@@ -34,7 +35,11 @@ class detailtimFragment : Fragment() {
     }
 
     private fun setUpRecyclerView() {
-        detailTimAdapter = DetailTimAdapter()
+        detailTimAdapter = DetailTimAdapter{DetailTim->
+            val action = detailtimFragmentDirections.actionDetailtimFragmentToDetailFragment(DetailTim)
+            findNavController().navigate(action)
+
+        }
         val detailtimData = DataDetailTim.dummyDetailtim
 //        tanpa apply
 //        binding?.rvFood?.layoutManager = LinearLayoutManager(requireActivity(),LinearLayoutManager.VERTICAL,false)

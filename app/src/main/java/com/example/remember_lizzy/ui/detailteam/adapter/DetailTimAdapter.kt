@@ -8,9 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.remember_lizzy.databinding.ItemdetailtimBinding
 import com.example.remember_lizzy.model.DetailTim
 import com.example.remember_lizzy.utils.Extension.showImageInto
-import com.example.remember_lizzy.utils.ExtensionGambarBulat.showImageIntoV2
 
-class DetailTimAdapter() :ListAdapter<DetailTim,DetailTimAdapter.DetailTimViewHolder>(DIFF_CALLBACK) {
+class DetailTimAdapter(val dataDetailTim: (DetailTim)->Unit) :ListAdapter<DetailTim,DetailTimAdapter.DetailTimViewHolder>(DIFF_CALLBACK) {
 
     inner class DetailTimViewHolder(private val binding: ItemdetailtimBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(detailTim: DetailTim)
@@ -21,7 +20,11 @@ class DetailTimAdapter() :ListAdapter<DetailTim,DetailTimAdapter.DetailTimViewHo
                 fotodetailteam.showImageInto(itemView.context,detailTim.iconcal)
                 progressBar.progress=detailTim.progressbarmin
                 taskper.text=detailTim.progressbarmin.toString()+"%"
+                itemView.setOnClickListener{
+                    dataDetailTim.invoke(detailTim)
+                }
             }
+
 
         }
 
@@ -39,6 +42,7 @@ class DetailTimAdapter() :ListAdapter<DetailTim,DetailTimAdapter.DetailTimViewHo
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DetailTimViewHolder {
         val binding = ItemdetailtimBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return DetailTimViewHolder(binding)
+
     }
 
 

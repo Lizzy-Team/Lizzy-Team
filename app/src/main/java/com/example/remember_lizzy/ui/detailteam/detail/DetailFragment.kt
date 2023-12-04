@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.navArgs
 import com.example.remember_lizzy.R
 import com.example.remember_lizzy.databinding.FragmentDetailBinding
 import com.example.remember_lizzy.ui.detailteam.adapter.SectionDetailAdapter
@@ -16,6 +17,7 @@ class DetailFragment : Fragment() {
 
     private var _binding: FragmentDetailBinding?= null
     private val binding get() = _binding
+    private val navArgs: DetailFragmentArgs by navArgs()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,6 +30,9 @@ class DetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setuptabview()
+        val foodsArgs = navArgs.detailtim
+        // isi dengan id = isi dengan data
+        binding?.tprofile?.text = foodsArgs.name
     }
 
     private fun setuptabview() {
