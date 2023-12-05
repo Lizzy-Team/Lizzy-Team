@@ -39,16 +39,7 @@
             android:name=".CatatanActivity"
             android:exported="false" />
         <activity
-            android:name=".utils.CatatanActivity"
-            android:exported="false" />
-        <activity
             android:name=".MemoTeamActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.detailteam.detail.DetailTabActivity"
-            android:exported="false" />
-        <activity
-            android:name=".component.TabDetailActivity"
             android:exported="false" />
         <activity
             android:name=".MemoActivity"
