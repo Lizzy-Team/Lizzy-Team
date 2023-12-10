@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EditProfilActivity">
@@ -15,23 +16,26 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
         android:contentDescription="back"
         android:drawableRight="@drawable/back"
-        app:layout_constraintStart_toEndOf="wrap_content"
-        app:layout_constraintBottom_toBottomOf="wrap_content"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="19dp" />
+        app:layout_constraintBottom_toTopOf="@+id/namaAwal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.282" />
 
     <TextView
         android:id="@+id/edtProfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="27dp"
         android:text="Edit Profil"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginTop="29dp"
         app:layout_constraintStart_toEndOf="@+id/BackButton"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,13 +55,14 @@
 
     <EditText
         android:id="@+id/edit_awal"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="48dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/edittext"
         android:hint="     Nama Awal"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,13 +84,14 @@
 
     <EditText
         android:id="@+id/edit_akhir"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="48dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/edittext"
         android:hint="     Nama Akhir"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,13 +113,14 @@
 
     <EditText
         android:id="@+id/edtEmail"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="48dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/edittext"
         android:hint="     Email"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -135,13 +142,14 @@
 
     <EditText
         android:id="@+id/edtNoHP"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="48dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/edittext"
         android:hint="     Nomor HP"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -163,13 +171,14 @@
 
     <EditText
         android:id="@+id/edtTanggal"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="48dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/edittext"
         android:hint="     Tanggal Lahir"
+        android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -180,11 +189,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="75dp"
         android:background="@drawable/rectangle_background"
+        android:contentDescription="tanggalan"
         android:src="@drawable/baseline_calendar_month_24"
-        app:layout_constraintBottom_toBottomOf="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_simpan"
+        app:layout_constraintEnd_toEndOf="@+id/edtTanggal"
         app:layout_constraintTop_toBottomOf="@+id/tglLHR" />
 
     <Button

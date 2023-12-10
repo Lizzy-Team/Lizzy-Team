@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/profil_frag_cont"
     tools:context=".ui.profile.ProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -86,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
-        android:text="Edit Profile"
+        android:text="Edit Profil"
         android:textColor="@color/greyscale70"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

@@ -15,6 +15,9 @@
         android:theme="@style/Theme.RememberLizzy"
         tools:targetApi="31">
         <activity
+            android:name=".ui.DaftarActivity"
+            android:exported="false" />
+        <activity
             android:name=".Onboarding3Activity"
             android:exported="false" />
         <activity
