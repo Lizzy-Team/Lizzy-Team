@@ -15,7 +15,7 @@ class splash_screenActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         CoroutineScope(Dispatchers.Main).launch {
-            delay(4000)
+            delay(3000)
             val intent = Intent(this@splash_screenActivity, OnbordingActivity::class.java)
             startActivity(intent)
             finish()

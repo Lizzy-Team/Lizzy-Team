@@ -17,5 +17,11 @@ class Onboarding3Activity : AppCompatActivity() {
             val ab = Intent(this@Onboarding3Activity, LoginActivity::class.java)
             startActivity(ab)
         }
+
+        val btnLewati : Button = findViewById(R.id.btn_skip3)
+        btnLewati.setOnClickListener{
+            val ba = Intent(this@Onboarding3Activity, LoginActivity::class.java)
+            startActivity(ba)
+        }
     }
 }

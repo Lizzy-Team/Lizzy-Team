@@ -15,6 +15,12 @@
         android:theme="@style/Theme.RememberLizzy"
         tools:targetApi="31">
         <activity
+            android:name=".TugasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelamatActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.DaftarActivity"
             android:exported="false" />
         <activity

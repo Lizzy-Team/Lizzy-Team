@@ -14,20 +14,23 @@
         android:orientation="horizontal"
        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/tambah_memo"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:src="@drawable/group_79"
             android:layout_marginEnd="20dp"
+            android:contentDescription="@string/ket_ver"
             />
 
         <ImageView
+            android:id="@+id/tambah_tugas"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:src="@drawable/group_80"/>
+            android:src="@drawable/group_80"
+            android:contentDescription="@string/ket_ver"/>
 
     </LinearLayout>
 

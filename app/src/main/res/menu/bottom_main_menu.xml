@@ -13,10 +13,8 @@
         android:icon="@drawable/baseline_content_paste_24"
         />
     <item
-        android:id="@+id/MemoNew"
-        android:enabled="false"
-        android:title="New"
-        android:icon="@drawable/baseline_add_24"/>
+        android:enabled="true"
+        android:title=""/>
     <item
         android:id="@+id/detailtimFragment"
         android:title="tim"

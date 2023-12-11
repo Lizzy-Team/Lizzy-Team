@@ -4,11 +4,13 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.service.autofill.FillEventHistory
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
+import com.example.remember_lizzy.ui.DaftarActivity
 import com.example.remember_lizzy.ui.home.HomeFragment
 
 class LoginActivity : AppCompatActivity() {
@@ -39,8 +41,20 @@ class LoginActivity : AppCompatActivity() {
 
         val btnLogin: Button = findViewById(R.id.btn_login)
         btnLogin.setOnClickListener {
-            val bb = Intent(this@LoginActivity, HomeFragment::class.java)
+            val aa = Intent(this@LoginActivity, MainActivity::class.java)
+            startActivity(aa)
+        }
+
+        val btnDaftar: Button = findViewById(R.id.btn_daftar)
+        btnDaftar.setOnClickListener {
+            val bb = Intent(this@LoginActivity, DaftarActivity::class.java)
             startActivity(bb)
+        }
+
+        val lupaSandi: TextView = findViewById(R.id.lupa_sandi)
+        lupaSandi.setOnClickListener {
+            val cc = Intent(this@LoginActivity, VerifikasiActivity::class.java)
+            resultLauncher.launch(cc)
         }
 
     }

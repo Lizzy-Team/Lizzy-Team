@@ -13,6 +13,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:src="@drawable/profile"
+        android:contentDescription="@string/profil"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="28dp"
-        android:text="Selamat Datang!"
+        android:text="@string/selamat"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -36,7 +37,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="40dp"
-        android:text="Lidya Dhanira"
+        android:text="@string/user"
         android:textColor="#808080"
         android:textSize="12sp"
         android:textStyle="bold"
@@ -50,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
-        android:text="14 November 2023"
+        android:text="@string/tgl2"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -64,7 +65,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/outlinebtntgl"
-        android:text="Semua"
+        android:text="@string/all"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -76,10 +77,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
         android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:text="Sel"
+        android:layout_marginBottom="6dp"
+        android:text="@string/sel"
         android:textColor="@color/black"
-        android:textSize="10sp"
+        android:textSize="11sp"
         app:layout_constraintBottom_toTopOf="@+id/appCompatButton2"
         app:layout_constraintStart_toEndOf="@+id/appCompatButton"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -101,9 +102,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginBottom="4dp"
-        android:text="Rab"
+        android:text="@string/rab"
         android:textColor="@color/black"
-        android:textSize="10sp"
+        android:textSize="11sp"
         app:layout_constraintBottom_toTopOf="@+id/appCompatButton3"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -125,7 +126,7 @@
         android:layout_width="52sp"
         android:layout_height="48sp"
         android:layout_marginStart="12dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="45dp"
         android:background="@drawable/outlinebtntgl"
         android:text="16"
         android:textColor="@color/black"
@@ -139,10 +140,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginTop="5dp"
-        android:text="Kam"
+        android:layout_marginBottom="8dp"
+        android:text="@string/kam"
         android:textColor="@color/black"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="wrap_content"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatButton4"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -151,23 +153,27 @@
         android:layout_width="52dp"
         android:layout_height="48dp"
         android:layout_marginStart="12dp"
-        android:layout_marginBottom="38dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/outlinebtntgl"
         android:backgroundTint="@color/primary300"
         android:text="17"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/horizontalview"
-        app:layout_constraintStart_toEndOf="@+id/appCompatButton4" />
+        app:layout_constraintStart_toEndOf="@+id/appCompatButton4"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="5dp"
-        android:text="Jum"
+        android:layout_marginTop="1dp"
+        android:text="@string/jum"
         android:textColor="@color/black"
-        android:textSize="10sp"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -180,6 +186,7 @@
         android:layout_marginBottom="15dp"
         android:background="@drawable/rectangle_background"
         android:src="@drawable/baseline_calendar_month_24"
+        android:contentDescription="@string/selamat"
         app:layout_constraintBottom_toBottomOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView" />
@@ -190,7 +197,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
-        android:text="Terakhir Dilihat"
+        android:text="@string/terakhir"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -203,7 +210,7 @@
         android:layout_marginStart="224dp"
         android:layout_marginTop="85dp"
         android:layout_marginEnd="16dp"
-        android:text="Lainnya"
+        android:text="@string/lain"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -222,7 +229,7 @@
 
         <LinearLayout
             android:id="@+id/LinearLayout1"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
             android:orientation="horizontal"
@@ -243,7 +250,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="18dp"
-                    android:text="Create Mobile App"
+                    android:text="@string/create"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -253,6 +260,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="50dp"
+                    android:contentDescription="@string/ket_ver"
                     android:src="@drawable/baseline_calendar_today_24" />
 
                 <TextView
@@ -260,7 +268,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="55dp"
-                    android:text="November 17, 2023 10:45 PM"
+                    android:text="@string/tgl1"
                     android:textSize="12sp"
                     android:textStyle="bold" />
 
@@ -304,7 +312,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="141dp"
                     android:layout_marginTop="82dp"
-                    android:text="Progress Task"
+                    android:text="@string/progress"
                     android:textColor="#808080"
                     android:textSize="12sp"
                     android:textStyle="bold" />
@@ -334,7 +342,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="18dp"
-                    android:text="Tugas XYZ"
+                    android:text="@string/xyz"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -344,14 +352,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="54dp"
-                    android:src="@drawable/baseline_calendar_today_24" />
+                    android:src="@drawable/baseline_calendar_today_24"
+                    android:contentDescription="@string/ket_ver"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="45dp"
                     android:layout_marginTop="57dp"
-                    android:text="7:45 AM"
+                    android:text="@string/jam"
                     android:textColor="#808080"
                     android:textSize="12sp"
                     android:textStyle="bold" />
@@ -361,21 +370,23 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="93dp"
                     android:layout_marginTop="58dp"
-                    android:src="@drawable/baseline_mic" />
+                    android:src="@drawable/baseline_mic"
+                    android:contentDescription="@string/ket_ver"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="111dp"
                     android:layout_marginTop="58dp"
-                    android:src="@drawable/baseline_check_circle_outline" />
+                    android:src="@drawable/baseline_check_circle_outline"
+                    android:contentDescription="@string/ket_ver" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="130dp"
                     android:layout_marginTop="57dp"
-                    android:text="0/15"
+                    android:text="@string/text1"
                     android:textColor="#808080"
                     android:textSize="12sp"
                     android:textStyle="bold" />
@@ -385,7 +396,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="193dp"
                     android:layout_marginTop="96dp"
-                    android:text="Memo"
+                    android:text="@string/Memo"
                     android:textColor="#808080"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -401,7 +412,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Tugas Saya"
+        android:text="@string/tgs_saya"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -414,7 +425,7 @@
         android:layout_marginStart="248dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Lainnya"
+        android:text="@string/lain"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -445,7 +456,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Create Mobile App"
+                    android:text="@string/create"
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:textSize="16sp"
@@ -454,7 +465,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Edutech App"
+                    android:text="@string/edu"
                     android:textSize="12sp"
                     android:layout_marginTop="36dp"
                     android:layout_marginStart="36dp"
@@ -490,10 +501,12 @@
                     android:src="@drawable/colab4"
                     android:layout_marginTop="18dp"
                     android:layout_marginStart="230dp"/>
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/labelhgh"/>
+                    android:src="@drawable/labelhgh"
+                    android:contentDescription="@string/ket_ver"/>
 
                 <androidx.appcompat.widget.AppCompatCheckBox
                     android:layout_width="48dp"
@@ -513,7 +526,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tugas XYZ"
+                    android:text="@string/xyz"
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:textSize="16sp"
@@ -522,7 +535,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kampus"
+                    android:text="@string/kampus"
                     android:textSize="12sp"
                     android:layout_marginTop="36dp"
                     android:layout_marginStart="36dp"
@@ -532,7 +545,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/label_medium"/>
+                    android:src="@drawable/label_medium"
+                    android:contentDescription="@string/ket_ver"/>
 
                 <androidx.appcompat.widget.AppCompatCheckBox
                     android:layout_width="48dp"
@@ -552,7 +566,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tugas ABC"
+                    android:text="@string/abc"
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:textSize="16sp"
@@ -561,7 +575,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kampus"
+                    android:text="@string/kampus"
                     android:textSize="12sp"
                     android:layout_marginTop="36dp"
                     android:layout_marginStart="36dp"
@@ -571,7 +585,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/label_low"/>
+                    android:src="@drawable/label_low"
+                    android:contentDescription="@string/ket_ver"/>
 
                 <androidx.appcompat.widget.AppCompatCheckBox
                     android:layout_width="48dp"

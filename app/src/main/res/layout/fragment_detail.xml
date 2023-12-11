@@ -5,26 +5,41 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.detailteam.detail.DetailFragment"
-    android:layout_marginTop="16dp"
-    >
+    android:layout_marginTop="16dp">
+
+    <TextView
+        android:id="@+id/namaTim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="@string/tim"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/gambar"
         android:layout_width="320dp"
         android:layout_height="134dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/kolaborasidefault"
+        android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
-        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large"
-        />
+        android:src="@drawable/kolaborasidefault"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namaTim"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large" />
 
     <TextView
         android:id="@+id/deskteam"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        tools:text="Networking tidak sama dengan Nepotisme Dengan bangun LinkedIn, HR bisa hire kita tanpa harus melamar terlebih dahulu."
+        tools:text="Merged team of massive challenge, betwween mobile development program and web development program, consist of 6 mobile's mentees and 4 web's mentees."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="@color/greyscale100"
@@ -40,7 +55,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/deskteam"
-        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
 
@@ -49,7 +64,8 @@
             android:id="@+id/gprofile"
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/vector"/>
+            android:src="@drawable/vector"
+            android:contentDescription="@string/tim"/>
 
         <TextView
             android:id="@+id/tprofile"
@@ -60,9 +76,9 @@
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
             android:layout_toEndOf="@id/gprofile"
-            android:text="Tim"
+            android:text="@string/grup"
             android:textColor="@color/greyscale70"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
             <com.google.android.material.imageview.ShapeableImageView
@@ -82,7 +98,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/team"
-        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
         >
@@ -90,18 +106,19 @@
             android:id="@+id/gketua"
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/profile"/>
+            android:src="@drawable/profile"
+            android:contentDescription="@string/tim"/>
         <TextView
             android:id="@+id/tketua"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ketua"
+            android:text="@string/ketua"
             android:textColor="@color/greyscale70"
             android:layout_toEndOf="@id/gketua"
             android:layout_margin="5dp"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
-            />
+            android:contentDescription="@string/tim"/>
 
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="24dp"
@@ -120,7 +137,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ketua"
-        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
         >
@@ -128,16 +145,17 @@
             android:id="@+id/gtanggal"
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/calendar"/>
+            android:src="@drawable/calendar"
+            android:contentDescription="@string/tim"/>
         <TextView
             android:id="@+id/ttanggal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tanggal"
+            android:text="@string/tgl"
             android:textColor="@color/greyscale70"
             android:layout_toEndOf="@id/gtanggal"
             android:layout_margin="5dp"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             />
 
@@ -147,7 +165,7 @@
             android:id="@+id/tv_tanggal"
             android:layout_toEndOf="@id/ttanggal"
             android:layout_marginStart="50dp"
-            android:text="22 November 2023"
+            android:text="@string/tgl2"
             android:layout_marginTop="8dp"
             tools:src="@drawable/kolaborasidefault"
             android:scaleType="centerCrop"
@@ -160,7 +178,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tanggal"
-        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
         >
@@ -168,7 +186,8 @@
             android:id="@+id/gprogress"
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/progress"/>
+            android:src="@drawable/progress"
+            android:contentDescription="@string/tim"/>
 
         <TextView
             android:id="@+id/tprogress"
@@ -178,9 +197,9 @@
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
             android:layout_toEndOf="@id/gprogress"
-            android:text="Progrees"
+            android:text="@string/pro"
             android:textColor="@color/greyscale70"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <ProgressBar
@@ -202,8 +221,8 @@
             tools:text="50%"
             android:textStyle="bold"
             android:textColor="@color/greyscale100"
-            android:layout_toRightOf="@+id/fotoprogress"
-            android:layout_marginLeft="10sp"
+            android:layout_toEndOf="@+id/fotoprogress"
+            android:layout_marginStart="10sp"
             android:layout_marginTop="4sp"/>
 
 
@@ -222,6 +241,7 @@
         android:layout_marginTop="10dp"
         app:tabMode="fixed"
         android:background="@color/primary300"
+        android:contentDescription="@string/tim"
         app:tabIndicatorGravity="stretch"
         app:tabIndicatorAnimationMode="elastic"
         app:tabTextColor="@color/primary100"

@@ -18,8 +18,8 @@
         android:layout_marginTop="3dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="0dp"
-        android:drawableRight="@drawable/silang"
-        android:contentDescription="silang"/>
+        android:drawableEnd="@drawable/silang"
+        android:contentDescription="@string/setting"/>
 
     <TextView
         android:id="@+id/titlememo"
@@ -65,6 +65,7 @@
         android:layout_toEndOf="@+id/jdwl"
         android:background="@drawable/rectangle_background"
         android:src="@drawable/baseline_calendar_month_24"
+        android:contentDescription="@string/setting"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="108dp" />
 
@@ -74,14 +75,19 @@
         android:layout_height="48dp"
         android:layout_below="@+id/jdwl"
         android:layout_marginTop="20dp"
-        android:hint="Judul" />
+        android:hint="@string/judul"
+        android:autofillHints="name"
+        android:inputType="text" />
+
     <EditText
         android:id="@+id/paragraphFormEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_below="@id/shortFormEditText"
         android:layout_marginTop="16dp"
-        android:hint="Deskripsi" />
+        android:hint="@string/deskripsi"
+        android:autofillHints="name"
+        android:inputType="textMultiLine"/>
 
     <TextView
         android:id="@+id/ket_prior"
@@ -112,7 +118,7 @@
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="105dp"
             android:layout_height="48dp"
-            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
             android:layout_marginTop="10dp"
             android:text="@string/low"
             android:textColor="@color/primary500"
@@ -127,7 +133,7 @@
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="105dp"
             android:layout_height="48dp"
-            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
             android:layout_marginTop="10dp"
             android:text="@string/medium"
             android:textAllCaps="false"
@@ -140,7 +146,7 @@
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="105dp"
             android:layout_height="48dp"
-            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
             android:layout_marginTop="10dp"
             android:text="@string/high"
             android:textAllCaps="false"

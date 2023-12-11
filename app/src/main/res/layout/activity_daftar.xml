@@ -12,9 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
-        android:text="Daftar"
+        android:text="@string/dft"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.132"
@@ -27,9 +27,10 @@
         android:layout_height="150dp"
         android:layout_marginTop="80dp"
         android:src="@drawable/daftar"
+        android:contentDescription="@string/dft"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
 
     <TextView
@@ -37,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Masukan Username"
+        android:text="@string/username"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -55,6 +56,8 @@
         android:layout_marginEnd="15dp"
         android:background="@drawable/edittext"
         android:hint="     Username"
+        android:autofillHints="username"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Masukan Email Anda"
+        android:text="@string/input_email"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -83,6 +86,8 @@
         android:layout_marginEnd="15dp"
         android:background="@drawable/edittext"
         android:hint="     Email"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="Masukan Kata Sandi"
+        android:text="@string/input_pass"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -111,13 +116,15 @@
         android:layout_marginEnd="15dp"
         android:background="@drawable/edittext"
         android:hint="     Buat Kata Sandi"
+        android:autofillHints="password"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_daftar"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="320dp"
         android:layout_height="50dp"
@@ -125,7 +132,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="15dp"
-        android:text="@string/lgn"
+        android:text="@string/dft"
         android:textAllCaps="false"
         android:textColor="@color/primary500"
         android:textSize="16sp"
@@ -141,11 +148,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"
         android:layout_marginTop="1dp"
-        android:text="Sudah punya akun?"
+        android:text="@string/akun"
         android:textColor="@color/greyscale70"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_daftar" />
 
     <TextView
         android:id="@+id/masuk"
@@ -153,12 +160,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="1dp"
-        android:text="Masuk"
+        android:text="@string/masuk"
         android:textColor="@color/greyscale70"
         android:textStyle="bold"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/pny_akun"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_daftar" />
 
 
 

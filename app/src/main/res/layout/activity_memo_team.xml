@@ -18,24 +18,20 @@
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="0dp"
             android:layout_marginEnd="10dp"
             android:drawableLeft="@drawable/silang"
-            android:contentDescription="silang"/>
+            android:contentDescription="@string/grup"/>
 
 
         <TextView
             android:id="@+id/titletask"
             android:layout_width="234dp"
             android:layout_height="54dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
             android:layout_marginStart="7dp"
             android:layout_marginEnd="73dp"
             android:gravity="center"
-            android:text="GRUP"
+            android:text="@string/team"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -59,9 +55,9 @@
             android:id="@+id/textPersonalBranding"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
+            android:layout_gravity="start"
             android:layout_marginTop="10dp"
-            android:text="Personal Branding"
+            android:text="@string/tim"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -70,26 +66,28 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/headphone"
-            android:layout_gravity="left"
-            android:layout_marginLeft="55dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="95dp"
             android:layout_marginTop="16dp"
-            android:layout_marginRight="8dp"/>
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/team"/>
 
         <!-- Icon Profile -->
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gabung" />
+            android:text="@string/gabung" />
 
         <ImageView
             android:id="@+id/iconProfile"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="40dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="16dp"
-            android:src="@drawable/vektor" />
+            android:src="@drawable/vektor"
+            android:contentDescription="@string/team"/>
 
     </LinearLayout>
 
@@ -99,7 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:hint="Cari"
+        android:hint="@string/cari"
         android:layout_marginTop="5dp">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -115,11 +113,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Online"
+        android:text="@string/on"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="#006400"
-        android:layout_gravity="left"
+        android:layout_gravity="start"
         android:layout_marginBottom="10dp" />
 
     <!-- Nama User Online -->
@@ -127,24 +125,24 @@
         android:id="@+id/user1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Riodiana"
-        android:layout_marginLeft="20dp"
+        android:text="@string/user"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="10dp" />
 
     <TextView
         android:id="@+id/user2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dika Ganteng"
-        android:layout_marginLeft="20dp"
+        android:text="@string/user1"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="10dp" />
 
     <TextView
         android:id="@+id/user3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ariana Grande"
-        android:layout_marginLeft="20dp"
+        android:text="@string/user2"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="10dp" />
 
     <!-- Offline -->
@@ -153,45 +151,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:text="Offline"
+        android:text="@string/off"
         android:textSize="18sp"
-        android:layout_gravity="left"
+        android:layout_gravity="start"
         android:layout_marginBottom="10dp" />
 
     <!-- Nama User Offline -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lizzania"
-        android:layout_marginLeft="20dp"
+        android:text="@string/user3"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Maila"
-        android:layout_marginLeft="20dp"
+        android:text="@string/user4"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ryanti"
-        android:layout_marginLeft="20dp"
+        android:text="@string/user5"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Husen"
-        android:layout_marginLeft="20dp"
+        android:text="@string/user6"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rizzky"
-        android:layout_marginLeft="20dp"
+        android:text="@string/user7"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp" />
 
     <LinearLayout
@@ -203,12 +201,14 @@
             android:id="@+id/editText"
             android:layout_width="280dp"
             android:layout_height="48dp"
-            android:layout_below="@id/textPersonalBranding"
             android:layout_marginTop="16dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:hint="Undang Partner"
-            android:paddingRight="8dp"/>
+            android:hint="@string/undang"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:autofillHints="username"
+            android:inputType="text"/>
 
         <!-- Icon Plus -->
         <ImageView
@@ -216,8 +216,9 @@
             android:layout_width="50dp"
             android:layout_height="30dp"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/plus_kotak" />
+            android:layout_marginStart="10dp"
+            android:src="@drawable/plus_kotak"
+            android:contentDescription="@string/undang"/>
 
 
     </LinearLayout>

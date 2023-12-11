@@ -1,6 +1,7 @@
 package com.example.remember_lizzy
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -12,6 +13,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.remember_lizzy.databinding.ActivityMainBinding
 import com.example.remember_lizzy.ui.detailteam.adapter.popFragment
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class MainActivity : AppCompatActivity() {
@@ -50,21 +52,5 @@ class MainActivity : AppCompatActivity() {
         val  fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.popup, fragment)
         fragmentTransaction.commit()
-    }
-    
-    private fun popFragment(): Fragment {
-        // Tambahkan logika untuk membuat dan mengembalikan Fragment yang diinginkan
-        return YourPopFragment()
-    }
-    
-    private fun setupFloatingActionButton() {
-        val btnScan: FloatingActionButton = findViewById(R.id.btn_scan)
-        btnScan.setOnClickListener {
-            // Ketika FloatingActionButton diklik, buka MemoActivity
-            val intent = Intent(this, MemoActivity::class.java)
-            startActivity(intent)
-            Log.d("MainActivity", "Button clicked!") // atau gunakan Toast untuk pesan popup sederhana
-        }
-
     }
 }
