@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_detailtimFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_detailtimFragment_to_addTeamActivity"
+            app:destination="@id/addTeamActivity" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -35,7 +38,12 @@
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" >
         <argument
-            android:name="detailtim"
-            app:argType="com.example.remember_lizzy.model.DetailTim" />
+            android:name="DetailTimModel"
+            app:argType="com.example.remember_lizzy.model.detailtimModel$Data" />
     </fragment>
+    <activity
+        android:id="@+id/addTeamActivity"
+        android:name="com.example.remember_lizzy.ui.detailteam.detail.AddTeamActivity"
+        android:label="activity_add_team"
+        tools:layout="@layout/activity_add_team" />
 </navigation>

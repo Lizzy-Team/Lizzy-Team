@@ -6,16 +6,18 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.remember_lizzy.databinding.ItemdetailtimBinding
-import com.example.remember_lizzy.model.DetailTim
+import com.example.remember_lizzy.model.detailtimModel
 import com.example.remember_lizzy.utils.Extension.showImageInto
 
-class DetailTimAdapter(val dataDetailTim: (DetailTim)->Unit) :ListAdapter<DetailTim,DetailTimAdapter.DetailTimViewHolder>(DIFF_CALLBACK) {
+class DetailTimAdapter(val dataDetailTim: (detailtimModel.Data)->Unit) :ListAdapter<detailtimModel.Data,DetailTimAdapter.DetailTimViewHolder>(DIFF_CALLBACK) {
 
     inner class DetailTimViewHolder(private val binding: ItemdetailtimBinding) : RecyclerView.ViewHolder(binding.root){
-        fun bind(detailTim: DetailTim)
+        fun bind(detailTim: detailtimModel.Data)
+
         {
+
             binding.apply {
-                namateam.text = detailTim.name
+                namateam.text = detailTim.nama
                 ttg.text = detailTim.ttg
                 fotodetailteam.showImageInto(itemView.context,detailTim.iconcal)
                 progressBar.progress=detailTim.progressbarmin
@@ -31,10 +33,10 @@ class DetailTimAdapter(val dataDetailTim: (DetailTim)->Unit) :ListAdapter<Detail
     }
 
     companion object{
-        val DIFF_CALLBACK = object : DiffUtil.ItemCallback<DetailTim>(){
-            override fun areItemsTheSame(oldItem: DetailTim, newItem: DetailTim): Boolean =
+        val DIFF_CALLBACK = object : DiffUtil.ItemCallback<detailtimModel.Data>(){
+            override fun areItemsTheSame(oldItem: detailtimModel.Data, newItem: detailtimModel.Data): Boolean =
                 oldItem == newItem
-            override fun areContentsTheSame(oldItem: DetailTim, newItem: DetailTim): Boolean =
+            override fun areContentsTheSame(oldItem: detailtimModel.Data, newItem: detailtimModel.Data): Boolean =
                 oldItem.id == newItem.id
 
         }
@@ -49,6 +51,8 @@ class DetailTimAdapter(val dataDetailTim: (DetailTim)->Unit) :ListAdapter<Detail
     override fun onBindViewHolder(holder: DetailTimViewHolder, position: Int) {
         holder.bind(getItem(position))
     }
+
+
 
 
 
