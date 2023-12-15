@@ -30,9 +30,9 @@ class DetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setuptabview()
-        val foodsArgs = navArgs.detailtim
+        val foodsArgs = navArgs.detailTimModel
         // isi dengan id = isi dengan data
-        binding?.tprofile?.text = foodsArgs.name
+        binding?.tprofile?.text = foodsArgs.nama
     }
 
     private fun setuptabview() {

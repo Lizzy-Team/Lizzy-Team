@@ -1,8 +1,10 @@
 package com.example.remember_lizzy.data
 
+import com.example.remember_lizzy.interfaces.ApiRetrofit
 import com.example.remember_lizzy.model.DetailTim
 
 object DataDetailTim {
+    private val api by lazy { ApiRetrofit().endpoint }
     val dummyDetailtim = listOf(
             DetailTim(
                 id = 1,
